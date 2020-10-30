@@ -1,2 +1,11 @@
-node_modules
 .cache
+node_modules
+package.json
+package-lock.json
+postcss.config.js
+README.MD
+tailwind.config.js
+style.tailwind.css
+assets/font.js
+assets/style.tailwind.js
+assets/tailwind.config.js
