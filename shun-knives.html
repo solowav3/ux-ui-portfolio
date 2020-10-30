@@ -1,0 +1,567 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shun Knives App Design</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="bg-sirius-grey">
+
+
+
+
+  <div id="scrim" class="scrim hidden" onclick="closeNav()"></div>
+
+<nav id="navbar" class="navbar justify-between">
+
+  <a id="btn_back" class="btn btn__white p-3" onclick="history.back()">
+    
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3 12L7 16L7 13L22 13L22 11L7 11L7 8L3 12Z" fill="#363636"/>
+    </svg>
+      
+  </a>
+
+  <a id="btn_menu" class="btn btn__white p-3" onclick="openNav()">
+    
+    <img src="assets/img/contact.svg" alt="">
+      
+  </a>
+
+</nav>
+
+<aside id="sidenav" class="bg-sirius-grey flex flex-col items-center justify-center content-start sm:p-8 p-2 border w-4/5 top-0 right-0 h-full overflow-auto fixed transform ease-in-out transition-all duration-300 z-50 translate-x-full">
+
+  <div class="sidenav__content md:w-8/12 w-full flex flex-col justify-center space-y-12">
+
+    <div class="contact__box flex flex-col rounded-md items-start p-4 md:p-8 border-2 border-dark-choco space-y-4 md:space-y-12">
+
+      <p class="lg:text-1.25"><b>Contact:</b></p>
+        
+        <div class="flex flex-col items-start space-y-2 md:space-y-4">
+
+          <a class="btn btn__project space-x-2 flex items-center" href="https://www.linkedin.com/in/filip-solovjev-245335a9/" target="_blank">
+            <img src="assets/img/linkedin.svg">
+            <p class="lg:text-1.25">LinkedIn</p>
+          </a>
+
+          <a class="btn btn__project space-x-2 flex items-center" href="mailto:fil.solovjov@gmail.com" target="_blank">
+            <img src="assets/img/email.svg">
+            <p class="lg:text-1.25">fil.solovjov@gmail.com</p>
+          </a>
+
+        </div>
+
+
+    </div>
+
+    <div class="about__box p-4 md:p-8 space-y-4 md:space-y-12">
+      <p class="lg:text-1.25"><b>... a little about me:</b></p>
+  
+      <ul class="space-y-2 md:space-y-4">
+  
+        <li class="flex items-center">
+          <img src="assets/img/dot-choco.svg" class="w-3 h-3 md:w-4 md:h-4 md:mx-6 mx-2">
+          <p class="lg:text-1.25">
+            Playing & producing music.
+          </p>
+        </li>
+  
+        <li class="flex items-center">
+          <img src="assets/img/dot-choco.svg" class="w-3 h-3 md:w-4 md:h-4 md:mx-6 mx-2">
+          <p class="lg:text-1.25">
+            Tweaking opensource OSes.
+          </p>
+        </li>
+  
+        <li class="flex items-center">
+          <img src="assets/img/dot-choco.svg" class="w-3 h-3 md:w-4 md:h-4 md:mx-6 mx-2">
+          <p class="lg:text-1.25">
+            Kombucha brewer.
+          </p>
+        </li>
+  
+        <li class="flex items-center">
+          <img src="assets/img/dot-choco.svg" class="w-3 h-3 md:w-4 md:h-4 md:mx-6 mx-2">
+          <p class="lg:text-1.25">
+            Proud father to two avocados.
+          </p>
+        </li>
+      </ul>
+
+    </div>
+  
+  </div>
+
+</aside>
+
+
+
+
+
+
+  <section id="hero" class="sirius"
+    style="background: linear-gradient(180deg, #EF617C 14.76%, #E0243B 100%);">
+
+    <div class="container cont-ext flex flex-col mx-auto items-center px-6 lg:px-12 pt-24 pb-6 lg:pt-48 lg:pb-24 space-y-16">
+
+
+      <div class="row__header mx-auto md:w-8/12">
+
+        <h1 class="text-center lg:text-5" data-aos="fade-up">Shun Knives App Design</h1>
+
+      </div>
+
+
+      <div class="flex flex-col items-center justify-items-center md:w-1/2 m-auto">
+
+
+          <img src="assets/img/shun/shun-preview.png">
+
+
+      </div>
+
+        <div class="row__summary py-8 lg:pb-32 w-full flex flex-col space-y-6 md:space-y-0 md:flex-row">
+
+          <div class="col md:w-1/2 m-auto space-y-8">
+            <p class="lg:text-1.25">
+              This <b>UI concept</b> started with exploration of Shun brand. Althought they seem to market their knives as premium japanese products, their brand identity didn’t really reflect that vibe.
+            </p>
+
+            <p class="lg:text-1.25">
+              Since there was no <b>smartphone app</b>, I figured I should try to create one to practise my UX/UI skills by solving hypothetical user problems.
+            </p>
+
+          </div>
+  
+        </div>
+
+
+
+    </div>
+
+  </section>
+
+
+  <section id="issues">
+
+    <div class="container flex flex-col mx-auto items-center px-6 lg:px-12 pt-24 pb-6 lg:pt-48 lg:pb-24 space-y-16">
+
+      <div class="row__header m-auto md:w-1/2">
+
+        <h2 class="text-center lg:text-4" data-aos="fade-up" >Issues</h2>
+
+      </div>
+
+      <div class="row__summary py-8 lg:py-32 w-full flex flex-col space-y-6 md:space-y-0 md:flex-row">
+        
+        <div class="col md:w-1/2 m-auto space-y-8">
+          
+          <p class="lg:text-1.25">Official website provides user with different categories and filters to choose from.</p>
+          <p class="lg:text-1.25">I argued, that it’s overwhelming to select one for those who don’t know much about chief’s knifes since there is no visual representation.</p>
+        
+        </div>
+
+      </div>
+
+
+      <div class="flex flex-col items-center justify-items-center m-auto">
+
+        <img src="assets/img/shun/site-categories.jpg">
+
+      </div>
+
+
+
+      <div class="row__summary py-8 lg:py-32 w-full flex flex-col space-y-8 md:space-y-0 md:flex-row">
+
+        <ul class="col md:w-1/2 m-auto space-y-8">
+
+          <p class="lg:text-1.25">Most of the UX decisions were build around an assumption, that <b>it’s hard to choose the right knife</b>, especially for an inexperienced cook.</p>
+
+          <p class="lg:text-1.25">To fix that, I’ve set up following <b>goals</b>:</p>
+
+          <li class="flex items-center">
+            <img src="assets/img/shun/dot-red.svg" class="w-4 h-4 mx-6">
+            <p class="lg:text-1.25">
+              <b>Minimize search efforts.</b>
+            </p>
+          </li>
+
+          <li class="flex items-center">
+            <img src="assets/img/shun/dot-red.svg" class="w-4 h-4 mx-6">
+            <p class="lg:text-1.25">
+              <b>Make UI more premium and authentic.</b>
+            </p>
+          </li>
+
+          <li class="flex items-center">
+            <img src="assets/img/shun/dot-red.svg" class="w-4 h-4 mx-6">
+            <p class="lg:text-1.25">
+              <b>Minimize interaction friction with product to maximize sales.</b>
+            </p>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+
+
+
+  <section id="typo-n-colors">
+
+    <div class="container flex flex-col mx-auto items-center px-6 lg:px-12 pt-24 pb-6 lg:pt-48 lg:pb-24 space-y-16 lg:space-y-40">
+
+      <div class="row__header mx-auto md:w-1/2">
+
+        <h2 class="lg:text-4 text-center" data-aos="fade-up">Typography<br>&<br>Colors</h2>
+
+      </div>
+
+
+      <div class="row__visual-shun p-6 flex flex-wrap items-center justify-center mx-auto gap-6 max-w-md sm:max-w-xl">
+          
+        <div class="palette-box palette-box__1 sm:h-40 sm:w-40 shadow-md hover:shadow-xl transition duration-300 ease-in-out"></div>
+        <div class="palette-box palette-box__2 sm:h-40 sm:w-40 shadow-md hover:shadow-xl transition duration-300 ease-in-out"></div>
+        <div class="palette-box palette-box__3 sm:h-40 sm:w-40 shadow-md hover:shadow-xl transition duration-300 ease-in-out"></div>
+        <div class="palette-box palette-box__4 sm:h-40 sm:w-40 shadow-md hover:shadow-xl transition duration-300 ease-in-out"></div>
+        <div class="palette-box palette-box__5 sm:h-40 sm:w-40 shadow-md hover:shadow-xl transition duration-300 ease-in-out"></div>
+        <div class="palette-box palette-box__6 sm:h-40 sm:w-40 shadow-md hover:shadow-xl transition duration-300 ease-in-out"></div>
+
+      </div>
+
+
+      <div class="col mx-auto md:w-1/2 space-y-8">
+
+        <p class="lg:text-1.25">
+          To <b>direct user’s attention on the product itself rather than UI</b>, I’ve chosen neutral snow white as main color and different grey shades  elements and also making whole app compatible with dark theme.
+        </p>
+
+        <p class="lg:text-1.25">
+          Frosty-red <b>gradient emphasizes actionable elements</b> and theirs’ interactive states.
+        </p>
+
+        <p class="lg:text-1.25">
+          Most european cultures interpret white and it’s descendents as sigils of purity and holiness; with red, which means power and blood, this <b>pallete emphasizes the japanese aestethics and premiality of the knives</b>.
+        </p>
+
+      </div>
+
+
+      <div class="row__visual-shun p-6 flex flex-wrap items-start mx-auto gap-8 max-w-md sm:max-w-xl">
+        
+        <img src="assets/img/shun/japanese-typo-n-color.svg" alt="">
+        <img src="assets/img/shun/museo-300.svg" alt="">
+        <img src="assets/img/shun/museo-700.svg" alt="">
+
+      </div>
+
+
+      <div class="col mx-auto md:w-1/2 space-y-6">
+
+        <p class="lg:text-1.25">
+          In combination with the pallete, <b>Museo Sans</b>’s elegance and straightness <b>reasembless japanese glyphs</b>. It’s sans-serif nature made product names stand out in the most exquisite way.
+        </p>
+
+        <p class="lg:text-1.25">
+          <b>Bold</b> is used to emphasize the most <b>conversionable text</b> elements.
+        </p>
+
+        <p class="lg:text-1.25">
+          All texts are sized and optimized based on <b>Material typography guidance</b>, assuring it’s readability.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section id="info-arch">
+
+    <div class="container flex flex-col mx-auto items-center px-6 lg:px-12 pt-24 pb-6 lg:pt-48 lg:pb-24 space-y-16">
+
+      <div class="row__header m-auto md:w-1/2">
+
+        <h2 class="text-center lg:text-4" data-aos="fade-up" >Information Architecture</h2>
+
+      </div>
+
+
+
+      <div class="row__summary py-8 lg:py-32 w-full flex flex-col space-y-6 md:space-y-0 md:flex-row">
+        
+        <div class="col md:w-1/2 m-auto space-y-8">
+          
+          <p class="lg:text-1.25">I’ve prepared a <b>screen map</b> to have an overview of all the screens I need to design and how they are related to each other.</p>
+
+          <p class="lg:text-1.25">Thanks to that, I was able to quickly find appropriate components and build the app without any compromises between functionality & design.</p>
+        
+        </div>
+
+      </div>
+
+
+      <div class="row__visual-shun p-6 md:p-12 flex flex-wrap items-end justify-center mx-auto gap-6 ">
+
+        <img src="assets/img/shun/screens-map.svg">
+
+      </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </section>
+
+
+
+
+  <section id="components">
+
+    <div class="container flex flex-col mx-auto items-center px-6 lg:px-12 pt-24 pb-6 lg:pt-48 lg:pb-24 space-y-16">
+
+      <div class="row__header">
+
+        <h2 class="lg:text-4 text-center" data-aos="fade-up">Components</h2>
+
+      </div>
+
+      <div class="row__summary w-full py-8 lg:py-32 flex flex-col space-y-6 md:space-y-0 md:flex-row">
+
+        <div class="col mx-auto md:w-6/12 space-y-8">
+          <p class="lg:text-1.25 ">After understanding how my app is going to function, I decided to use <b>layers in my design</b>.</p>
+          <p class="lg:text-1.25 ">By sketching different ideas, I’ve created components which formed the front layer.</p>
+        </div>
+
+      </div>
+
+
+      <div class="row__visual-shun p-6 md:p-12 flex flex-wrap items-end justify-center mx-auto gap-6 ">
+
+        <div class="">
+
+          <figure class="">
+            <img src="assets/img/shun/components/product-visual-preview.png" alt="Wireframe">
+          </figure>
+
+        </div>
+
+        <div class="space-y-6">
+
+          <figure class="">
+            <img src="assets/img/shun/components/component-pick-size.png" class="shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+          </figure>
+
+          <figure class="">
+            <img src="assets/img/shun/components/component-sun.png" class="">
+          </figure>
+
+          <figure class="">
+            <img src="assets/img/shun/components/component-product-card.png" class="shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+          </figure>
+
+          <figure class="">
+            <img src="assets/img/shun/components/component-product-in-card.png" class="shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+          </figure>
+
+
+        
+        </div>
+
+
+
+      </div>
+
+      <div class="row__summary w-full py-8 lg:py-32 flex flex-col space-y-6 md:space-y-0 md:flex-row">
+
+        <div class="col mx-auto md:w-1/2 space-y-8">
+          <p class="lg:text-1.25 ">In order to control what is shown on front layer, I’ve created different filters based on available parameters of the product.</p>
+        </div>
+
+      </div>
+
+
+      <div class="row__visual-shun p-6 md:p-12 flex flex-wrap items-end justify-center mx-auto gap-6 ">
+
+        <div class="space-y-6">
+
+          <img src="assets/img/shun/filters/use.png" class="shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+
+          <img src="assets/img/shun/filters/shape.png" class="shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+
+          <img src="assets/img/shun/filters/length.png" class="shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+
+          <img src="assets/img/shun/filters/steel.png" class="shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+
+        </div>
+
+
+        <div class="space-y-6">
+
+          <img src="assets/img/shun/filters/edge.png" class="shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+
+          <img src="assets/img/shun/filters/steel-layers.png" class="shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+
+          <img src="assets/img/shun/filters/handle-material.png" class="shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+
+          <img src="assets/img/shun/filters/price-range.png" class="shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+
+        </div>
+
+
+
+      </div>
+     
+
+
+    </div>
+
+  </section>
+
+
+
+
+  <section id="interactions">
+
+    <div class="container flex flex-col mx-auto items-center px-6 lg:px-12 pt-24 pb-6 lg:pt-48 lg:pb-24 space-y-16">
+
+      <div class="row__header mx-auto md:w-1/2">
+
+        <h2 class="lg:text-4 text-center" data-aos="fade-up">Interactions</h2>
+
+      </div>
+
+
+      <div class="row__summary py-8 lg:py-32 flex flex-col md:space-y-0 md:flex-row">
+
+        <div class="col mx-auto md:w-1/2 space-y-8">
+          <p class="lg:text-1.25 ">On start up, app greets user with brand logo and <b>card animations</b>, implicitly “teaching” user by <b>showing swipe directions</b> for all avaliable actions.</p>
+        </div>
+
+      </div>
+
+
+
+      <div class="row__visual-shun p-6 md:p-12 flex flex-wrap items-end justify-items-center justify-center mx-auto gap-16 ">
+
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/shun/greeting.mp4" type="video/mp4" />
+        </video>
+
+      </div>
+
+
+
+
+      <div class="row__summary py-8 lg:py-32 flex flex-col space-y-6">
+
+        <div class="col mx-auto md:w-1/2">
+          <p class="lg:text-1.25 ">Default frontlayer view is a <b>discover mode</b> - based on filters and category, user is presented with couple of <b>most relevant knives</b>.</p>
+        </div>
+
+        <div class="col mx-auto md:w-1/2">
+          <p class="lg:text-1.25 ">User can check wether there is a <b>different size</b> of the knife by simply <b>swiping down</b> product card.</p>
+        </div>
+
+      </div>
+
+      <div class="row__visual-shun p-6 md:p-12 flex flex-col flex-wrap items-end justify-items-center justify-center mx-auto gap-16 ">
+
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/shun/discover.mp4" type="video/mp4" />
+        </video>
+
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/shun/sizes.mp4" type="video/mp4" />
+        </video>
+        
+      </div>
+
+
+
+      <div class="row__summary w-full py-8 lg:py-32 flex flex-col space-y-6 md:space-y-0 md:flex-row">
+
+        <div class="col mx-auto md:w-1/2 space-y-8">
+          <p class="lg:text-1.25 "><b>Backlayer consists of filters and categories</b>, which control and inform what content to display on the front layer.</p>
+          <p class="lg:text-1.25 ">This way, user always sees the examples of applied filters with the sample of products.</p>
+        </div>
+
+      </div>
+
+      <div class="row__visual-shun p-6 md:p-12 flex flex-col flex-wrap items-end justify-items-center justify-center mx-auto gap-16 ">
+
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/shun/categories.mp4" type="video/mp4" />
+        </video>
+
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/shun/filters.mp4" type="video/mp4" />
+        </video>
+        
+      </div>
+
+
+
+
+
+      <div class="row__summary w-full py-8 lg:py-32 flex flex-col ">
+
+        <div class="col mx-auto md:w-1/2 space-y-8">
+          <p class="lg:text-1.25 "><b>Swiping up</b> a product card reveals description, gallery and reviews about the knife.</p>
+          <p class="lg:text-1.25 ">Header of the cart sheet displays number of added items and is one swipe away from the checkout.</p>
+        </div>
+
+      </div>
+
+      <div class="row__visual-shun p-6 md:p-12 flex flex-col flex-wrap items-end justify-items-center justify-center mx-auto gap-16 ">
+
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/shun/product-page.mp4" type="video/mp4" />
+        </video>
+
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/shun/cart.mp4" type="video/mp4" />
+        </video>
+        
+      </div>
+
+
+      
+
+
+
+    </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <script src="assets/index.js"></script>
+</body>
+
+</html>

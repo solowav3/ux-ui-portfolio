@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Metro';
+  font-style: regular;
+  src: url('./metro-sans-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Spartan Bold';
+  font-style: bold;
+  src: url('./Spartan-Bold.woff2') format('woff2');
+}

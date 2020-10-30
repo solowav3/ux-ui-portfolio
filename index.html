@@ -1,0 +1,226 @@
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solovjev Filip Portfolio</title>
+
+  <link rel="stylesheet" href="assets/style.css">
+
+  <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="bg-sirius-grey">
+
+
+<div id="scrim" class="scrim hidden" onclick="closeNav()"></div>
+
+<nav id="navbar" class="navbar justify-end">
+
+  <a class="btn btn__white p-3" onclick="openNav()">
+    
+    <img src="assets/img/contact.svg" alt="">
+      
+  </a>
+
+</nav>
+
+<aside id="sidenav" class="bg-sirius-grey flex flex-col items-center justify-center content-start sm:p-8 p-2 border w-4/5 top-0 right-0 h-full overflow-auto fixed transform ease-in-out transition-all duration-300 z-50 translate-x-full">
+
+  <div class="sidenav__content md:w-8/12 w-full flex flex-col justify-center space-y-12">
+
+    <div class="contact__box flex flex-col rounded-md items-start p-4 md:p-8 border-2 border-dark-choco space-y-4 md:space-y-12">
+
+      <p class="lg:text-1.25"><b>Contact:</b></p>
+        
+        <div class="flex flex-col items-start space-y-2 md:space-y-4">
+
+          <a class="btn btn__project space-x-2 flex items-center" href="https://www.linkedin.com/in/filip-solovjev-245335a9/" target="_blank">
+            <img src="assets/img/linkedin.svg">
+            <p class="lg:text-1.25">LinkedIn</p>
+          </a>
+
+          <a class="btn btn__project space-x-2 flex items-center" href="mailto:fil.solovjov@gmail.com" target="_blank">
+            <img src="assets/img/email.svg">
+            <p class="lg:text-1.25">fil.solovjov@gmail.com</p>
+          </a>
+
+        </div>
+
+
+    </div>
+
+    <div class="about__box p-4 md:p-8 space-y-4 md:space-y-12">
+      <p class="lg:text-1.25"><b>... a little about me:</b></p>
+  
+      <ul class="space-y-2 md:space-y-4">
+  
+        <li class="flex items-center">
+          <img src="assets/img/dot-choco.svg" class="w-3 h-3 md:w-4 md:h-4 md:mx-6 mx-2">
+          <p class="lg:text-1.25">
+            Playing & producing music.
+          </p>
+        </li>
+  
+        <li class="flex items-center">
+          <img src="assets/img/dot-choco.svg" class="w-3 h-3 md:w-4 md:h-4 md:mx-6 mx-2">
+          <p class="lg:text-1.25">
+            Tweaking opensource OSes.
+          </p>
+        </li>
+  
+        <li class="flex items-center">
+          <img src="assets/img/dot-choco.svg" class="w-3 h-3 md:w-4 md:h-4 md:mx-6 mx-2">
+          <p class="lg:text-1.25">
+            Kombucha brewer.
+          </p>
+        </li>
+  
+        <li class="flex items-center">
+          <img src="assets/img/dot-choco.svg" class="w-3 h-3 md:w-4 md:h-4 md:mx-6 mx-2">
+          <p class="lg:text-1.25">
+            Proud father to two avocados.
+          </p>
+        </li>
+      </ul>
+
+    </div>
+  
+  </div>
+
+</aside>
+
+  <section id="hero">
+
+    <!-- <div class="container flex flex-col mx-auto px-8 md:px-16 pt-24 lg:pt-32  pb-6 lg:pb-24 space-y-8 md:space-y-16"> -->
+
+    <div class="container flex flex-col mx-auto px-8 md:px-16 py-24 xl:px-24 lg:px-12 lg:pt-48 lg:pb-24 space-y-16">
+
+      
+
+      <div data-aos="fade-down" class="row__header">
+
+        <h1 class="lg:text-4.25 md:text-3">Good <span id="greeting">#greeting</span>,<br>I am Filip.</h1>
+
+      </div>
+
+      <div class="row__summary flex flex-col">
+
+        <div class="col md:w-8/12 flex flex-col space-y-8">
+          
+          <p data-aos="fade-down" data-aos-delay="300" class="lg:text-1.25">
+            As a UX researcher / UI designer I enjoy finding real user problems and solving those by designing meaningful experiences, bringing values to both users and stakeholders.
+          </p>
+
+          <p data-aos="fade-down" data-aos-delay="400" class="lg:text-1.25">
+            Based of my experience in web development, I seek to find the right tool to get the job done at it’s best.
+          </p>
+
+        </div>
+          
+      </div>
+
+      <div data-aos="fade-in" data-aos-delay="300" class="row__projects self-center flex flex-col items-center space-y-2 pt-24">
+        
+        <a href="#g-translate" onclick="scrollToTop();" class="border-2 border-dark-choco w-12 h-12 flex justify-center items-center rounded-full ">
+            
+          <svg class="animate-bounce" width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12.7485L18.59 11.3385L13 16.9185V4.74854H11V16.9185L5.42 11.3285L4 12.7485L12 20.7485L20 12.7485Z" fill="#363636"/>
+          </svg>
+
+        </a>
+
+        <p class="lg:text-1.25">
+          My projects
+        </p>
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+  </section>
+
+
+  <section id="g-translate" class="sirius"
+  style="background: linear-gradient(179deg, rgba(86,202,213,1), rgba(36,122,212,1));">
+
+  <div class="container flex flex-col md:flex-row mx-auto items-start sm:items-center px-8 md:px-16 py-24 xl:px-24 lg:px-12 lg:pt-48 lg:pb-24 sm:gap-8">
+
+
+    <div class="col__visual max-w-sm md:max-w-lg mx-auto flex md:flex-row py-8">
+
+      <img src="assets/img/translate/app-preview.png" alt="">
+
+    </div>
+
+    <div class="col__summary flex flex-col items-start justify-center w-10/12 md:w-5/12 space-y-8">
+
+      <h1 class="lg:text-4.25 md:text-3">Google<br>Translate</h1>
+
+      <p data-aos="fade-left" class="lg:text-1.25 uppercase">
+        <b>Mobile app concept / UX & UI redesign</b>
+      </p>
+
+      <p data-aos="fade-left" class="lg:text-1.25 sm:w-10/12">
+        Based on qualitative and quantitive <b>UX research</b>, I’ve added missing features and tweaked existing ones to expand current functionality to meet users’ needs.
+      </p>
+
+      <a class="btn btn__project" href="google-translate.html">See project</a>
+
+    </div>
+
+
+
+  </div>
+
+  </section>
+  
+
+  <section id="shun-knives" class="sirius"
+  style="background: linear-gradient(180deg, #EF617C 14.76%, #E0243B 100%);">
+
+  <div class="container flex flex-col md:flex-row-reverse mx-auto items-start sm:items-center px-8 md:px-16 py-24 xl:px-24 lg:px-12 lg:pt-48 lg:pb-24 sm:gap-8">
+
+
+    <div class="col__visual max-w-sm md:max-w-lg mx-auto flex md:flex-row py-8">
+
+      <img src="assets/img/shun/shun-preview.png" alt="">
+
+    </div>
+
+    <div class="col__summary flex flex-col items-start justify-center w-10/12 md:w-5/12 space-y-8">
+
+      <h1 class="lg:text-4.25 md:text-3">Shun<br>Knives</h1>
+
+      <p data-aos="fade-right" class="lg:text-1.25 sm:w-10/12 uppercase">
+        <b>E-shop mobile app concept</b>
+      </p>
+
+      <p data-aos="fade-right" class="lg:text-1.25 sm:w-10/12">
+        By researching and using suitable design elements within the UI, I focused on emphasizing the authenticity and premiality of the Japanese chief knives brand.
+      </p>
+
+      <a class="btn btn__project" href="shun-knives.html">See project</a>
+
+    </div>
+
+  </div>
+
+  </section>
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <script src="assets/index.js"></script>
+  <script src="assets/time.js"></script>
+</body>
+
+</html>
