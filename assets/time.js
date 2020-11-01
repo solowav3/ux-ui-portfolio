@@ -2,15 +2,16 @@ let d = new Date(),
 time = d.getHours(),
 greeting = document.getElementById('greeting');
 
+
 if (time < 12) {
   greeting.textContent = 'morning';
 }
-if (time > 12) {
+else if (time < 17) {
   greeting.textContent = 'afternoon';
 }
-if (time > 20) {
+else if (time < 21) {
   greeting.textContent = 'evening';
 }
-if (time > 24 && time < 5) {
+else {
   greeting.textContent = 'night';
 }
