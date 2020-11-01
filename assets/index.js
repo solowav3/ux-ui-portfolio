@@ -13,18 +13,14 @@ function openNav() {
 
   document.getElementById("scrim").classList.remove('hidden');
 
-  document.getElementById("btn_back").classList.add('hidden');
-
-
-  document.getElementById("navbar").classList.remove('justify-between');
-  document.getElementById("navbar").classList.add('justify-end');
+  document.getElementById("navbar").classList.remove('navbar');
+  document.getElementById("navbar").classList.add('hidden');
 
 
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
-  // document.getElementById("sidenav").style.width = "0";
 
   document.getElementById("sidenav").classList.remove('translate-x-0');
 
@@ -32,10 +28,8 @@ function closeNav() {
 
   document.getElementById("scrim").classList.add('hidden');
 
-  document.getElementById("btn_back").classList.remove('hidden');
-
-  document.getElementById("navbar").classList.add('justify-between');
-  document.getElementById("navbar").classList.remove('justify-end');
+  document.getElementById("navbar").classList.remove('hidden');
+  document.getElementById("navbar").classList.add('navbar');
 
 
 } 
